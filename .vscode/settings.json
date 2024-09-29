@@ -1,6 +1,14 @@
 {
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  }
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always",
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "cSpell.words": [
+    "trivago"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
