@@ -8,6 +8,7 @@
     "*.css": "tailwindcss"
   },
   "cSpell.words": [
+    "roboto",
     "trivago"
   ],
   "typescript.tsdk": "node_modules/typescript/lib"
