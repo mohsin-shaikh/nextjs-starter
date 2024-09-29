@@ -5,7 +5,8 @@
     "prettier"
   ],
   "plugins": [
-    "check-file"
+    "check-file",
+    "n"
   ],
   "rules": {
     "prefer-arrow-callback": [
@@ -20,6 +21,9 @@
     "quotes": [
       "error",
       "double"
+    ],
+    "n/no-process-env": [
+      "error"
     ],
     "check-file/filename-naming-convention": [
       "error",
