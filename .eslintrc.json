@@ -8,6 +8,9 @@
     "check-file",
     "n"
   ],
+  // "ignorePatterns": [
+  //   "src/components/ui/**"
+  // ],
   "rules": {
     "prefer-arrow-callback": [
       "error"
@@ -37,7 +40,7 @@
     "check-file/folder-naming-convention": [
       "error",
       {
-        "src/**": "KEBAB_CASE"
+        "src/**/!^[.*": "KEBAB_CASE"
       }
     ]
   }

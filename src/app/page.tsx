@@ -1,12 +1,22 @@
-"use client";
+import { auth } from "@/auth";
+import { SignInButton } from "@/components/signin-button";
+import { SignOutButton } from "@/components/signout-button";
 
-import { Button } from "@/components/ui/button";
+const Home = async () => {
+  const session = await auth();
 
-export default function Home() {
+  // if (!session.user) return null;
+
   return (
-    <div>
-      <h1>Hello</h1>
-      <Button onClick={() => alert()}>Button</Button>
+    <div className="container mx-auto">
+      <h1>Next JS Stater App</h1>
+      {session?.user ? <p>{session.user.email}</p> : null}
+      <div className="flex gap-2">
+        {!session?.user ? <SignInButton /> : null}
+        {session?.user ? <SignOutButton /> : null}
+      </div>
     </div>
   );
-}
+};
+
+export default Home;

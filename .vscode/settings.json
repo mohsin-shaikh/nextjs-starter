@@ -10,7 +10,8 @@
   "cSpell.words": [
     "jiti",
     "roboto",
-    "trivago"
+    "trivago",
+    "signout",
   ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
