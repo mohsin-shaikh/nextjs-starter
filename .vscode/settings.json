@@ -12,6 +12,7 @@
     "roboto",
     "trivago",
     "signout",
+    "stepperize",
   ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
